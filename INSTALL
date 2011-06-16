@@ -1,0 +1,12 @@
+You must have the following installed:
+
+* gtk+ 2.x. 
+* glib 2.x.
+
+To compile, change the makefile (if needed) and then issue the command "make".
+It should compile out-of-the-box on most systems.
+
+To install, type "make install", and it will copy the binary into /usr/local/bin by default.
+
+To run, simply type 'shutbox' and enjoy.
+

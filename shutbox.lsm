@@ -1,0 +1,20 @@
+Begin4
+Title:   Shut the Box
+Version:  0.4
+Entered-date:  8/27/2004
+Description: Shut the Box is a simple diversion written in C and GTK+.
+
+   The object is simple: Roll the dice and click the tiles that sum up
+   to that dice roll until there are no more tiles to click. 
+   Shut The Box is based off of those little wooden puzzles with dice and tiles.
+
+Keywords:  games, shut the box, puzzle, gtk+
+Author:   craig@decafbad.net (Craig Maloney)
+Maintained-by:  craig@decafbad.net
+Primary-site:  http://decafbad.net/projects/shutbox
+Alternate-site: metalab.unc.edu pub/Linux/www/misc
+   shutbox-0.4.tar.gz 41KB
+Original-site:  
+Platforms: GTK+, Linux, GCC
+Copying-policy:  GPL
+End 

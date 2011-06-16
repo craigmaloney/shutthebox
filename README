@@ -1,0 +1,18 @@
+Shut The Box 0.4
+Written by Craig Maloney
+
+A simple dice diversion for one player.
+
+The object is simple. "Shut The Box" by rolling dice and clicking on the
+numbers that add up to the dice roll until there are no more tiles to click.
+
+This is an initial release of this code. Yes, it's not the best code, and
+contains a lot of "learning curves". Patches and suggestions are appreciated!
+:) 
+
+In the future I'd like to implement a "hint" system.
+Also some other forms of scoring, and different variatons of
+the game would be nice. 
+
+Let me know what you think. Send me e-mail: craig@decafbad.net.
+
