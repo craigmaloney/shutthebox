@@ -51,7 +51,8 @@ GtkWidget *round_label;
 GtkWidget *die_pixmap1, *die_pixmap2;
 dice die1;
 dice die2;
-int round, score;
+int round_number;
+int score;
 typeTileButton *tempButton;
 
 typeTileButton TileButtons[13];

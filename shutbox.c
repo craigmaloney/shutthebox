@@ -222,9 +222,9 @@ void ResetTileButtons (typeTileButton * boxButton) {
 void ResetGame (void) {
 	ClearTileButtons (TileButtons);
 	ResetTileButtons (TileButtons);
-	round = 1;
+	round_number = 1;
 	score = 0;
-	SetRoundLabel (round, round_label);
+	SetRoundLabel (round_number, round_label);
 	SetScoreLabel (score, score_label);
 	RollDie ();
 }
@@ -242,7 +242,7 @@ void RollEvent (GtkWidget * widget, gpointer * data) {
 
 	ButtonValue = TallyScore (TileButtons);
 	if (ButtonValue == (die1.value + die2.value)) {
-		score += ButtonValue*round;
+		score += ButtonValue*round_number;
 		for (k = 1; k <= 9; k++) {
 			SetTileButtonsInactive (TileButtons, k);
 		}
@@ -255,8 +255,8 @@ void RollEvent (GtkWidget * widget, gpointer * data) {
 			gtk_widget_show_all(dialog_won);
 			ResetGame();
 		}
-		round++;
-		SetRoundLabel (round, round_label);
+		round_number++;
+		SetRoundLabel (round_number, round_label);
 		SetScoreLabel (score, score_label);
 	}
 	if (CheckEndGame(die1.value+die2.value) == 0) {
@@ -283,8 +283,8 @@ int main (int argc, char *argv[]) {
 	/* Give the Dice some initial values */
 	die1.value = 1;
 	die2.value = 1;
-	/* Initialize the score and round */
-	round = 1;
+	/* Initialize the score and round_number */
+	round_number = 1;
 	score = 0;
 
 	/* Create the Winner Dialog Window */
